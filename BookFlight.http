@@ -1,0 +1,6 @@
+@BookFlight_HostAddress = http://localhost:5161
+
+GET {{BookFlight_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
