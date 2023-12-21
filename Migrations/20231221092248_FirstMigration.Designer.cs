@@ -12,8 +12,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace BookFlight.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    [Migration("20231216185555_AddedBookFlightModelMigration")]
-    partial class AddedBookFlightModelMigration
+    [Migration("20231221092248_FirstMigration")]
+    partial class FirstMigration
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -68,175 +68,175 @@ namespace BookFlight.Migrations
                         {
                             Id = 3,
                             From = "New York",
-                            Time = "01:55 AM",
+                            Time = "04:22 PM",
                             To = "Houston"
                         },
                         new
                         {
                             Id = 4,
                             From = "Los Angeles",
-                            Time = "02:55 AM",
+                            Time = "05:22 PM",
                             To = "Phoenix"
                         },
                         new
                         {
                             Id = 5,
                             From = "Chicago",
-                            Time = "03:55 AM",
+                            Time = "06:22 PM",
                             To = "Philadelphia"
                         },
                         new
                         {
                             Id = 6,
                             From = "Houston",
-                            Time = "04:55 AM",
+                            Time = "07:22 PM",
                             To = "San Antonio"
                         },
                         new
                         {
                             Id = 7,
                             From = "Phoenix",
-                            Time = "05:55 AM",
+                            Time = "08:22 PM",
                             To = "San Diego"
                         },
                         new
                         {
                             Id = 8,
                             From = "Philadelphia",
-                            Time = "06:55 AM",
+                            Time = "09:22 PM",
                             To = "Dallas"
                         },
                         new
                         {
                             Id = 9,
                             From = "San Antonio",
-                            Time = "07:55 AM",
+                            Time = "10:22 PM",
                             To = "San Jose"
                         },
                         new
                         {
                             Id = 10,
                             From = "San Diego",
-                            Time = "08:55 AM",
+                            Time = "11:22 PM",
                             To = "Austin"
                         },
                         new
                         {
                             Id = 11,
                             From = "Dallas",
-                            Time = "09:55 AM",
+                            Time = "12:22 AM",
                             To = "Jacksonville"
                         },
                         new
                         {
                             Id = 12,
                             From = "San Jose",
-                            Time = "10:55 AM",
+                            Time = "01:22 AM",
                             To = "San Francisco"
                         },
                         new
                         {
                             Id = 13,
                             From = "Austin",
-                            Time = "11:55 AM",
+                            Time = "02:22 AM",
                             To = "Indianapolis"
                         },
                         new
                         {
                             Id = 14,
                             From = "Jacksonville",
-                            Time = "12:55 PM",
+                            Time = "03:22 AM",
                             To = "Columbus"
                         },
                         new
                         {
                             Id = 15,
                             From = "San Francisco",
-                            Time = "01:55 PM",
+                            Time = "04:22 AM",
                             To = "Fort Worth"
                         },
                         new
                         {
                             Id = 16,
                             From = "Indianapolis",
-                            Time = "02:55 PM",
+                            Time = "05:22 AM",
                             To = "Charlotte"
                         },
                         new
                         {
                             Id = 17,
                             From = "Columbus",
-                            Time = "03:55 PM",
+                            Time = "06:22 AM",
                             To = "Seattle"
                         },
                         new
                         {
                             Id = 18,
                             From = "Fort Worth",
-                            Time = "04:55 PM",
+                            Time = "07:22 AM",
                             To = "Denver"
                         },
                         new
                         {
                             Id = 19,
                             From = "Charlotte",
-                            Time = "05:55 PM",
+                            Time = "08:22 AM",
                             To = "El Paso"
                         },
                         new
                         {
                             Id = 20,
                             From = "Seattle",
-                            Time = "06:55 PM",
+                            Time = "09:22 AM",
                             To = "Detroit"
                         },
                         new
                         {
                             Id = 21,
                             From = "Denver",
-                            Time = "07:55 PM",
+                            Time = "10:22 AM",
                             To = "Boston"
                         },
                         new
                         {
                             Id = 22,
                             From = "El Paso",
-                            Time = "08:55 PM",
+                            Time = "11:22 AM",
                             To = "Memphis"
                         },
                         new
                         {
                             Id = 23,
                             From = "Detroit",
-                            Time = "09:55 PM",
+                            Time = "12:22 PM",
                             To = "Nashville"
                         },
                         new
                         {
                             Id = 24,
                             From = "Boston",
-                            Time = "10:55 PM",
+                            Time = "01:22 PM",
                             To = "Dubai"
                         },
                         new
                         {
                             Id = 25,
                             From = "Memphis",
-                            Time = "11:55 PM",
+                            Time = "02:22 PM",
                             To = "New York"
                         },
                         new
                         {
                             Id = 26,
                             From = "Nashville",
-                            Time = "12:55 AM",
+                            Time = "03:22 PM",
                             To = "Los Angeles"
                         },
                         new
                         {
                             Id = 27,
                             From = "Dubai",
-                            Time = "01:55 AM",
+                            Time = "04:22 PM",
                             To = "Chicago"
                         });
                 });

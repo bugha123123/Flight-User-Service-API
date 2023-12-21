@@ -19,8 +19,8 @@ namespace BookFlight.Data
         {
             // Seed some initial flights
             modelBuilder.Entity<BookFlightModel>().HasData(
-                new BookFlightModel { Id =1,From = "New York", To = "London", Time = "12:00 PM" },
-                new BookFlightModel {  Id = 2,From = "Paris", To = "Tokyo", Time = "03:30 PM" }
+                new BookFlightModel { Id = 1, From = "New York", To = "London", Time = "12:00 PM" },
+                new BookFlightModel { Id = 2, From = "Paris", To = "Tokyo", Time = "03:30 PM" }
                 // Add more flights as needed
             );
 
@@ -44,6 +44,7 @@ namespace BookFlight.Data
                     }
                 );
             }
+
         }
     }
 }
