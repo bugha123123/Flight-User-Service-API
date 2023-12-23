@@ -32,14 +32,14 @@ namespace BookFlight.Data
             };
 
             // Generate and seed 23 more flights with different cities
-            for (int i = 3; i <= 27; i++)
+            for (int i = 3; i <= 200; i++)
             {
                 modelBuilder.Entity<BookFlightModel>().HasData(
                     new BookFlightModel
                     {
                         Id = i,
-                        From = cities[i - 3],      // Choose from the list of cities
-                        To = cities[i % 25],       // Ensure the "To" city is different
+                        From = cities[i - 2],      // Choose from the list of cities
+                        To = cities[i % 20],       // Ensure the "To" city is different
                         Time = $"{DateTime.Now.AddHours(i):hh:mm tt}"
                     }
                 );
