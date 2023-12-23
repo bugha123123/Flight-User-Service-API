@@ -24,7 +24,7 @@ namespace BookFlight.Model
 
         public DateTime JoinedAt { get; set; }
 
-
+        //public virtual ICollection<Reviews> Reviews { get; set; }
 
 
     }

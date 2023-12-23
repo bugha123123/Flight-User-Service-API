@@ -22,7 +22,6 @@ namespace BookFlight.Controllers
         }
 
         [HttpPost]
-
         public async Task<ActionResult> PostReviews(Reviews reviews)
         {
             if (reviews is null)
@@ -35,56 +34,34 @@ namespace BookFlight.Controllers
                 TitleInput = reviews.TitleInput,
                 MyReviews = reviews.MyReviews,
                 LocationInput = reviews.LocationInput,
-           Image =  reviews.Image,
+                Image = reviews.Image,
             };
             await _reviews.Reviews.AddAsync(NewReview);
             await _reviews.SaveChangesAsync();
 
-
-
             return Created(string.Empty, NewReview);
-
-
-
-
-           
         }
-
 
         [HttpGet]
         public async Task<ActionResult<List<Reviews>>> GetReviews()
         {
-
-
             List<Reviews> reviews = await _reviews.Reviews.ToListAsync();
 
-            if (reviews.Count  == 0)
+            if (reviews.Count == 0)
                 return NoContent();
-
-
 
             List<Reviews> result = reviews.Select(x => new Reviews
             {
                 Title = x.Title,
                 TitleInput = x.TitleInput,
-       
-             MyReviews = x.MyReviews,
-             LocationInput = x.LocationInput,
-          Image =   x.Image,
-
-
-
+                MyReviews = x.MyReviews,
+                LocationInput = x.LocationInput,
+                Image = x.Image,
             }).ToList();
 
-
-
             return Ok(result);
-
-
-
-
-
         }
+    }
+}
     
-}
-}
+

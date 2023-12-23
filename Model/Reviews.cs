@@ -21,6 +21,10 @@ namespace BookFlight.Model
 
         public string Image { get; set; }
 
+        //[ForeignKey(nameof(UserModel))]
+        //public int  UserModelId { get; set; }
+
+        //public UserModel UserModel { get; set; }
 
     }
 }
