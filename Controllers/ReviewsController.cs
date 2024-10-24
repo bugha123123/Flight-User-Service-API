@@ -21,7 +21,7 @@ namespace BookFlight.Controllers
             _reviews = reviews;
         }
 
-        [HttpPost]
+        [HttpPost("postReview")]
         public async Task<ActionResult> PostReviews(Reviews reviews)
         {
             if (reviews is null)
@@ -42,7 +42,7 @@ namespace BookFlight.Controllers
             return Created(string.Empty, NewReview);
         }
 
-        [HttpGet]
+        [HttpGet("GetReviews")]
         public async Task<ActionResult<List<Reviews>>> GetReviews()
         {
             List<Reviews> reviews = await _reviews.Reviews.ToListAsync();

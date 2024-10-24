@@ -19,7 +19,7 @@ namespace BookFlight.Controllers
         }
 
         // PUT: api/Profile/{email}
-        [HttpPut("{email}")]
+        [HttpPut("updateUser/{email}")]
         public IActionResult UpdateUserProfile(string email, [FromBody] UserModel updatedUser)
         {
             var existingUser = _context.Users.FirstOrDefault(u => u.EmailAddress == email);

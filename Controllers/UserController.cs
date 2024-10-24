@@ -25,7 +25,7 @@ namespace BookFlight.Controllers
   
         }
         
-        [HttpPost]
+        [HttpPost("addUser")]
         [ProducesResponseType(StatusCodes.Status400BadRequest)]
         [ProducesResponseType(StatusCodes.Status201Created)]
         public async Task<ActionResult> AddNewUser(UserModel createUser)
@@ -57,7 +57,7 @@ namespace BookFlight.Controllers
             return Created(string.Empty, newCompany);
         }
 
-        [HttpGet]
+        [HttpGet("getUsers")]
         [ProducesResponseType(StatusCodes.Status204NoContent)]
         [ProducesResponseType(StatusCodes.Status200OK)]
         public ActionResult<List<UserModel>> GetUsers()
@@ -91,7 +91,7 @@ namespace BookFlight.Controllers
 
 
 
-        [HttpPut]
+        [HttpPut("updatePassword")]
         public async Task<IActionResult> UpdateUserPassword(UpdateUserDTO user)
         {
             // Find the user by email
