@@ -36,6 +36,7 @@ app.UseCors(policy => policy.AllowAnyOrigin().AllowAnyHeader().AllowAnyMethod())
 app.UseSwaggerUI(c =>
 {
     c.SwaggerEndpoint("/swagger/v1/swagger.json", "BookFlight API V1");
+    c.RoutePrefix = string.Empty;
 });
 
 app.UseAuthorization();
